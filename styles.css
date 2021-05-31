@@ -422,7 +422,6 @@ li {
 
 .section {
   padding: 5rem 0 7rem 0;
-  overflow-x: hidden;
 }
 
 .about {
@@ -611,6 +610,7 @@ a.btn:active,
 /* Teams */
 
 .team {
+  height: 364px;
   color: #fff;
   background-color: #111;
   padding: 3rem;

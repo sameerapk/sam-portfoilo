@@ -103,7 +103,7 @@ if (glide)
 AOS.init();
 
 new TypeIt("#type1", {
-  speed: 120,
+  speed: 80,
   loop: true,
   waitUntilVisible: true,
 })
@@ -119,7 +119,7 @@ new TypeIt("#type1", {
   .go();
 
 new TypeIt("#type2", {
-  speed: 120,
+  speed: 80,
   loop: true,
   waitUntilVisible: true,
 })
