@@ -35,46 +35,16 @@ const menu = document.querySelector(".menu");
 const navOpen = document.querySelector(".hamburger");
 const navClose = document.querySelector(".close");
 
-const navLeft = menu.getBoundingClientRect().left;
 navOpen.addEventListener("click", () => {
-  if (navLeft < 0) {
     menu.classList.add("show");
     document.body.classList.add("show");
     navBar.classList.add("show");
-  }
 });
 
 navClose.addEventListener("click", () => {
-  if (navLeft < 0) {
     menu.classList.remove("show");
     document.body.classList.remove("show");
     navBar.classList.remove("show");
-  }
-});
-
-// Colors
-
-const widget = document.querySelector(".widget");
-const control = document.querySelector(".control");
-
-widget.addEventListener("click", () => {
-  control.classList.toggle("open");
-});
-
-const colors = [...document.querySelectorAll(".colors span")];
-document.querySelector(":root").style.setProperty("--customColor", "#0044ff");
-
-colors.forEach((color) => {
-  color.addEventListener("click", () => {
-    const currentColor = color.dataset.id;
-    document
-      .querySelector(":root")
-      .style.setProperty("--customColor", currentColor);
-  });
-});
-
-window.addEventListener("scroll", () => {
-  control.classList.remove("open");
 });
 
 // Glidejs
@@ -103,44 +73,28 @@ if (glide)
 AOS.init();
 
 new TypeIt("#type1", {
-  speed: 80,
+  speed: 60,
   loop: true,
   waitUntilVisible: true,
 })
   .type("Front end Developer", { delay: 400 })
-  .pause(500)
+  .pause(400)
   .delete(20)
   .type("Javascript Enthusiast", { delay: 400 })
-  .pause(500)
+  .pause(400)
   .delete(25)
+  .type("Full Stack developer", { delay: 400 })
+  .pause(400)
+  .delete(30)
   .type("Singer", { delay: 400 })
-  .pause(500)
+  .pause(400)
   .delete(9)
   .go();
-
-new TypeIt("#type2", {
-  speed: 80,
-  loop: true,
-  waitUntilVisible: true,
-})
-.type("Front end Developer", { delay: 400 })
-.pause(500)
-.delete(20)
-.type("Javascript Enthusiast", { delay: 400 })
-.pause(500)
-.delete(25)
-.type("Singer", { delay: 400 })
-.pause(500)
-.delete(9)
-.type("Passionate Web Developer", { delay: 400 })
-.pause(500)
-.delete(30)
-.go();
 
 gsap.from(".logo", { opacity: 0, duration: 1, delay: 0.5, y: -10 });
 gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 0.8, x: 20 });
 gsap.from(".banner", { opacity: 0, duration: 1, delay: 1.1, x: -200 });
-gsap.from(".header img", { opacity: 0, duration: 1, delay: 1, x: -50 })
+gsap.from(".hero-img-container", { opacity: 0, duration: 1, delay: 1, x: -50 })
 gsap.from(".hero h3", { opacity: 0, duration: 1, delay: 1.4, y: -50 });
 gsap.from(".hero h1", { opacity: 0, duration: 1, delay: 1.7, y: -45 });
 gsap.from(".hero h4", { opacity: 0, duration: 1, delay: 2.1, y: -30 });
