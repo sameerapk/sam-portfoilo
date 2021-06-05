@@ -235,7 +235,7 @@ li {
 }
 
 .hero h4 span {
-  color: var(--customColor);
+  color: cyan;
   text-decoration: underline;
 }
 
