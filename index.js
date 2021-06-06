@@ -86,7 +86,7 @@ new TypeIt("#type1", {
   .type("Full Stack developer", { delay: 400 })
   .pause(400)
   .delete(30)
-  .type("Singer", { delay: 400 })
+  .type("Hobbyist Singer", { delay: 400 })
   .pause(400)
   .delete(9)
   .go();
