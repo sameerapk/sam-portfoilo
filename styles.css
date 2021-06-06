@@ -536,8 +536,12 @@ z-index: -1;
 @media only screen and (max-width: 567px) {
   .section.skills {
     margin-top: 2rem;
-    width: 80%;
   }
+
+  .skills-container {
+    width: 90%;
+  }
+
 .skills-container-logos {
   margin-bottom: 2rem;
   justify-content:space-around;
