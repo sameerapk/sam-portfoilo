@@ -530,7 +530,7 @@ a.btn:active,
   }
 .skills-container-logos {
   margin-bottom: 2rem;
-  gap: 4rem;
+  gap: 10rem;
 }
 
 .skills-container-item span {
