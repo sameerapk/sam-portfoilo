@@ -356,7 +356,8 @@ li {
 /* About */
 
 .section {
-  padding: 5rem 0 7rem 0;
+  padding: 2rem 0 7rem 0;
+
   
 }
 
@@ -374,6 +375,7 @@ li {
   background-attachment: fixed;
   background-size: cover;
   opacity: 0.5;
+  z-index: -1;
   width: 100%;
   height: 100%;
 }
@@ -394,7 +396,7 @@ li {
 }
 
 .title {
-  margin: 4rem 0 7rem 0;
+  margin: 4rem 0 4rem 0;
   text-align: center;
 }
 
@@ -497,6 +499,45 @@ a.btn:active,
 
 /* Skills */
 
+.section.skills {
+  margin-top: 2rem;
+  width: 36%;
+  height: 500px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: -6px 1px 8px 2px rgba(146, 64, 39, 0.56);
+-webkit-box-shadow: -6px 1px 8px 2px rgba(0,0,0,0.56);
+-moz-box-shadow: -6px 1px 8px 2px rgba(0,0,0,0.56);
+} 
+
+.skills-container-logos {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.skills-container-item {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+@media only screen and (max-width: 567px) {
+  .section.skills {
+    margin-top: 2rem;
+    width: 80%;
+  }
+.skills-container-logos {
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.skills-container-item span {
+  font-size: 10px;
+}
+
+}
 
 /* Teams */
 
