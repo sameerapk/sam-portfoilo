@@ -104,6 +104,14 @@ li {
   justify-content: space-between;
 }
 
+ul.connect-buttons {
+  display: flex;
+}
+
+.connect-buttons li {
+  margin-left: 10px;
+}
+
 .logo h1 {
   font-size: 2.5rem;
   color: #fff;
